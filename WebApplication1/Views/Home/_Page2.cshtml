@@ -1,0 +1,56 @@
+﻿@*<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Signin Template for Bootstrap</title>
+	<!-- Bootstrap core CSS -->
+	<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="~/css/_Page1.css" rel="stylesheet">
+	<script src='@Url.Content("~/lib/jquery-validation-unobtrusive/jquery-validation-unobtrusive.js")'></script>
+	 <script src='@Url.Content("~/lib/jquery/dist/jquery.js")'></script>
+	 <script src='@Url.Content("~/lib/jquery/dist/jquery.js")'></script>
+	 @section scripts{
+		 <script src="~/lib/jquery-unobtrusive.ajax/jquery.unobtrusive-ajax.js"></script>
+		  <script src="~/lib/jquery/dist/jquery.js"></script>
+		   <script src="~/lib/jquery-validation-unobtrusive/jquery-validation-unobtrusive.js"></script>
+		   <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.js"></script>
+	 }
+</head>
+<body class="text-center">
+	<h1>
+
+		@if (ViewBag.x != null)
+		{
+			<h> @ViewBag.x</h>
+		}
+		<a data-ajax="true" data-ajax-mode="replace"> aaa </a>
+	</h1>
+</body>
+</html>
+*@
+
+
+
+
+@*<div class="row">
+	<form asp-action="testMeth" data-ajax="true" data-ajax-mode="replace" data-ajax-update="#tm">
+
+		<input type="submit" value="click" />
+
+	</form>
+
+
+
+</div>*@
+
+@page
+@*@model HomeController*@
+<a href="" data-ajax="true" data-ajax-url="/index/partial" data-ajax-update="#panel">Click here</a>
+<div id="panel"></div>
+
+		 <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
